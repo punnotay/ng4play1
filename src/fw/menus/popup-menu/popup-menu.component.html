@@ -1,0 +1,6 @@
+<li *ngFor="let item of menu">
+  <fw-menu-item [item]="item"
+      [ngClass]="{ 'vertical-menu': menuService.isVertical }"
+      class="in-popup">
+  </fw-menu-item>
+</li>

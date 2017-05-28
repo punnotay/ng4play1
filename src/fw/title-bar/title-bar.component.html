@@ -1,0 +1,17 @@
+<div *screenLarge class="title-bar user-title-bar">
+  <img src="assets/logo.png" alt="Green Logo">
+  <div class="menu-area">
+    <fw-top-bar></fw-top-bar>
+    <fw-menu *ngIf="!menuService.isVertical"></fw-menu>
+  </div>
+</div>
+
+<div *screenBelowLarge class="title-bar-small">
+  <span class="glyphicon glyphicon-menu-hamburger"
+      (click)="menuService.toggleLeftSideMenu()"></span>
+  <div class="small-image-holder">
+    <img src="assets/logo.png" alt="Green Logo" class="small-image">
+  </div>
+  <span class="glyphicon glyphicon-option-vertical"></span>
+</div>
+
